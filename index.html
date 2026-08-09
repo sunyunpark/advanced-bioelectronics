@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Advanced Bioelectronics develops integrated circuits for next-generation neural interfaces and bioelectronic systems." />
+  <title>Advanced Bioelectronics</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Advanced Bioelectronics home">
+        <span class="brand-mark" aria-hidden="true">AB</span>
+        <span class="brand-name">Advanced Bioelectronics</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#technology">Technology</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">BIOELECTRONIC IC TECHNOLOGY</p>
+          <h1>Integrated Circuits for<br />Next-Generation Bioelectronics</h1>
+          <p class="hero-lead">
+            Advanced Bioelectronics develops low-power, high-performance integrated circuits
+            for neural recording, stimulation, and advanced bioelectronic interfaces.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#technology">Explore Technology</a>
+            <a class="button button-secondary" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Abstract bioelectronic interface illustration">
+          <svg viewBox="0 0 720 520" role="img" aria-labelledby="visualTitle visualDesc">
+            <title id="visualTitle">Bioelectronic integrated circuit illustration</title>
+            <desc id="visualDesc">An abstract integrated circuit connected to neural signal paths.</desc>
+            <defs>
+              <linearGradient id="chipFill" x1="0" x2="1">
+                <stop offset="0%" stop-color="#10223e"/>
+                <stop offset="100%" stop-color="#17385e"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="5" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+
+            <g class="signal-lines" fill="none" stroke-linecap="round">
+              <path d="M36 124 C122 124, 120 210, 220 210"/>
+              <path d="M40 174 C126 174, 120 244, 220 244"/>
+              <path d="M34 348 C128 348, 120 278, 220 278"/>
+              <path d="M42 398 C130 398, 122 312, 220 312"/>
+              <path d="M500 210 C596 210, 592 120, 684 120"/>
+              <path d="M500 244 C598 244, 590 176, 680 176"/>
+              <path d="M500 278 C598 278, 590 344, 686 344"/>
+              <path d="M500 312 C598 312, 590 402, 682 402"/>
+            </g>
+
+            <g class="nodes">
+              <circle cx="36" cy="124" r="6"/><circle cx="40" cy="174" r="6"/>
+              <circle cx="34" cy="348" r="6"/><circle cx="42" cy="398" r="6"/>
+              <circle cx="684" cy="120" r="6"/><circle cx="680" cy="176" r="6"/>
+              <circle cx="686" cy="344" r="6"/><circle cx="682" cy="402" r="6"/>
+            </g>
+
+            <rect x="220" y="142" width="280" height="238" rx="28" fill="url(#chipFill)" class="chip"/>
+            <rect x="250" y="172" width="220" height="178" rx="18" class="chip-core"/>
+            <text x="360" y="248" text-anchor="middle" class="chip-label">ADVANCED</text>
+            <text x="360" y="278" text-anchor="middle" class="chip-label">BIOELECTRONICS</text>
+            <text x="360" y="318" text-anchor="middle" class="chip-sub">MIXED-SIGNAL IC</text>
+
+            <g class="pins">
+              <line x1="220" y1="190" x2="192" y2="190"/>
+              <line x1="220" y1="232" x2="192" y2="232"/>
+              <line x1="220" y1="290" x2="192" y2="290"/>
+              <line x1="220" y1="332" x2="192" y2="332"/>
+              <line x1="500" y1="190" x2="528" y2="190"/>
+              <line x1="500" y1="232" x2="528" y2="232"/>
+              <line x1="500" y1="290" x2="528" y2="290"/>
+              <line x1="500" y1="332" x2="528" y2="332"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#technology" aria-label="Scroll to technology">
+        <span>Scroll</span>
+        <span class="scroll-arrow">↓</span>
+      </a>
+    </section>
+
+    <section class="section" id="technology">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR TECHNOLOGY</p>
+        <h2>Building the electronics at the interface between biology and silicon.</h2>
+        <p>
+          We focus on low-power mixed-signal circuit architectures that enable compact,
+          scalable, and high-performance bioelectronic systems.
+        </p>
+      </div>
+
+      <div class="technology-grid">
+        <article class="technology-card reveal">
+          <div class="card-index">01</div>
+          <h3>Neural Recording</h3>
+          <p>
+            Low-noise, low-power front-end circuits for high-channel-count neural and
+            biosignal acquisition.
+          </p>
+          <ul>
+            <li>Low-noise analog front ends</li>
+            <li>Scalable multi-channel architectures</li>
+            <li>Energy-efficient data acquisition</li>
+          </ul>
+        </article>
+
+        <article class="technology-card reveal">
+          <div class="card-index">02</div>
+          <h3>Neural Stimulation</h3>
+          <p>
+            Precision stimulation circuits for implantable and wearable bioelectronic
+            interfaces.
+          </p>
+          <ul>
+            <li>Programmable stimulation</li>
+            <li>Charge-aware architectures</li>
+            <li>Compact system integration</li>
+          </ul>
+        </article>
+
+        <article class="technology-card reveal">
+          <div class="card-index">03</div>
+          <h3>Mixed-Signal Integration</h3>
+          <p>
+            System-level integration of sensing, stimulation, data conversion, and
+            supporting mixed-signal functions.
+          </p>
+          <ul>
+            <li>ASIC architecture</li>
+            <li>Analog / digital co-design</li>
+            <li>Silicon validation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="solutions">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SOLUTIONS</p>
+        <h2>From circuit architecture to validated silicon.</h2>
+      </div>
+
+      <div class="solution-list">
+        <div class="solution-row reveal">
+          <span class="solution-number">01</span>
+          <div>
+            <h3>Bioelectronic Interface ICs</h3>
+            <p>
+              Integrated circuits optimized for neural and physiological signal interfaces,
+              with emphasis on power, noise, area, and scalability.
+            </p>
+          </div>
+        </div>
+
+        <div class="solution-row reveal">
+          <span class="solution-number">02</span>
+          <div>
+            <h3>Custom ASIC Development</h3>
+            <p>
+              Application-specific mixed-signal IC development spanning architecture,
+              transistor-level implementation, verification, and silicon evaluation.
+            </p>
+          </div>
+        </div>
+
+        <div class="solution-row reveal">
+          <span class="solution-number">03</span>
+          <div>
+            <h3>Technology Collaboration</h3>
+            <p>
+              Technical collaboration for next-generation biomedical and neural interface
+              systems requiring specialized semiconductor solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section company-section" id="company">
+      <div class="company-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">COMPANY</p>
+          <h2>Advanced Bioelectronics</h2>
+        </div>
+
+        <div class="company-copy reveal">
+          <p class="company-lead">
+            Advanced Bioelectronics is a semiconductor technology venture focused on
+            integrated circuits for neural interfaces and bioelectronic systems.
+          </p>
+          <p>
+            Our goal is to translate advanced circuit and system technologies into
+            practical platforms for research, medical technology, and emerging
+            bioelectronic applications.
+          </p>
+          <p class="status-note">
+            Company information will be updated following formal incorporation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let’s build the next bioelectronic interface.</h2>
+        <p>
+          For technology collaboration and business inquiries, please contact us.
+        </p>
+        <a class="button button-primary" href="mailto:contact@example.com">
+          contact@example.com
+        </a>
+        <p class="contact-note">Replace this temporary address with the company email before public launch.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <span>© <span id="year"></span> Advanced Bioelectronics</span>
+      <span>Bioelectronic Integrated Circuit Technology</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const nav = document.querySelector('.nav');
+
+    menuButton.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
