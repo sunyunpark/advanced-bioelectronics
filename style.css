@@ -48,12 +48,12 @@ a {
 
 .nav-wrap {
   width: min(var(--max), 92vw);
-  min-height: 92px;
+  min-height: 72px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 24px;
 }
 
 .brand {
@@ -65,29 +65,34 @@ a {
   letter-spacing: -0.02em;
 }
 
-.brand-logo {
-  display: block;
-  width: 380px;
-  max-width: 48vw;
-  height: auto;
-  object-fit: contain;
-  object-position: left center;
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  color: var(--white);
+  background: var(--navy);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.brand-name {
+  font-size: 16px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 36px;
-  margin-left: auto;
+  gap: 30px;
 }
 
 .nav a {
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
-  color: #34445c;
+  font-size: 14px;
+  font-weight: 650;
+  color: #415168;
   transition: color .2s ease;
-  white-space: nowrap;
 }
 
 .nav a:hover {
@@ -562,56 +567,26 @@ footer {
 
 @media (max-width: 700px) {
   .nav-wrap {
-    width: 92vw;
-    min-height: 78px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    min-height: 64px;
   }
 
-  .brand {
-    flex: 1 1 auto;
-    min-width: 0;
-  }
-
-  .brand-logo {
-    width: 245px;
-    max-width: calc(100vw - 96px);
-    height: auto;
+  .brand-name {
+    font-size: 14px;
   }
 
   .menu-button {
     display: block;
-    flex: 0 0 auto;
-    width: 46px;
-    height: 46px;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: rgba(255,255,255,.78);
-    cursor: pointer;
-    padding: 9px;
-  }
-
-  .menu-button span {
-    display: block;
-    height: 2px;
-    margin: 6px 0;
-    border-radius: 2px;
-    background: var(--navy);
   }
 
   .nav {
     position: absolute;
-    top: 78px;
+    top: 64px;
     left: 4vw;
     right: 4vw;
     display: none;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    margin-left: 0;
     padding: 10px;
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -624,24 +599,12 @@ footer {
   }
 
   .nav a {
-    display: block;
-    width: 100%;
-    padding: 14px 12px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #34445c;
-    white-space: normal;
-  }
-
-  .nav a:hover {
-    background: #f3f7fb;
-    color: var(--accent);
+    padding: 12px 10px;
   }
 
   .hero {
     min-height: auto;
-    padding: 116px 4vw 72px;
+    padding: 112px 4vw 72px;
   }
 
   h1 {

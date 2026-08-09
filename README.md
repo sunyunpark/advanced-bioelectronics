@@ -30,8 +30,3 @@ The project site should then be available at:
 
 ## Notes
 The page uses relative asset paths (`./style.css`) so it works correctly as a GitHub Pages project site.
-
-
-## V2 updates
-- Replaced the temporary text logo with a custom inline SVG monogram.
-- Updated the contact email to `sungyun.abe@gmail.com`.
