@@ -48,12 +48,12 @@ a {
 
 .nav-wrap {
   width: min(var(--max), 92vw);
-  min-height: 72px;
+  min-height: 70px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 28px;
 }
 
 .brand {
@@ -67,9 +67,9 @@ a {
 
 .brand-logo {
   display: block;
-  width: 245px;
-  max-width: 42vw;
-  height: 50px;
+  width: 330px;
+  max-width: 46vw;
+  height: 46px;
   object-fit: contain;
   object-position: left center;
 }
@@ -77,15 +77,17 @@ a {
 .nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
+  margin-left: auto;
 }
 
 .nav a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 650;
   color: #415168;
   transition: color .2s ease;
+  white-space: nowrap;
 }
 
 .nav a:hover {
@@ -560,36 +562,38 @@ footer {
 
 @media (max-width: 700px) {
   .nav-wrap {
-    min-height: 64px;
-  }
+  width: min(var(--max), 92vw);
+  min-height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
 
   .menu-button {
     display: block;
   }
 
   .nav {
-    position: absolute;
-    top: 64px;
-    left: 4vw;
-    right: 4vw;
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 10px;
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    background: rgba(255,255,255,.98);
-    box-shadow: var(--shadow);
-  }
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto;
+}
 
   .nav.open {
     display: flex;
   }
 
   .nav a {
-    padding: 12px 10px;
-  }
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 650;
+  color: #415168;
+  transition: color .2s ease;
+  white-space: nowrap;
+}
 
   .hero {
     min-height: auto;
