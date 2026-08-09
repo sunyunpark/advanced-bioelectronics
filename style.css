@@ -65,20 +65,13 @@ a {
   letter-spacing: -0.02em;
 }
 
-.brand-mark {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 11px;
-  color: var(--white);
-  background: var(--navy);
-  font-size: 13px;
-  letter-spacing: 0.04em;
-}
-
-.brand-name {
-  font-size: 16px;
+.brand-logo {
+  display: block;
+  width: 245px;
+  max-width: 42vw;
+  height: 50px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .nav {
@@ -568,10 +561,6 @@ footer {
 @media (max-width: 700px) {
   .nav-wrap {
     min-height: 64px;
-  }
-
-  .brand-name {
-    font-size: 14px;
   }
 
   .menu-button {
