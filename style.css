@@ -77,15 +77,15 @@ a {
 .nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 36px;
   margin-left: auto;
 }
 
 .nav a {
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 650;
-  color: #415168;
+  font-size: 15px;
+  font-weight: 700;
+  color: #34445c;
   transition: color .2s ease;
   white-space: nowrap;
 }
@@ -562,42 +562,86 @@ footer {
 
 @media (max-width: 700px) {
   .nav-wrap {
-  width: min(var(--max), 92vw);
-  min-height: 70px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-}
+    width: 92vw;
+    min-height: 78px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .brand-logo {
+    width: 245px;
+    max-width: calc(100vw - 96px);
+    height: auto;
+  }
 
   .menu-button {
     display: block;
+    flex: 0 0 auto;
+    width: 46px;
+    height: 46px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: rgba(255,255,255,.78);
+    cursor: pointer;
+    padding: 9px;
+  }
+
+  .menu-button span {
+    display: block;
+    height: 2px;
+    margin: 6px 0;
+    border-radius: 2px;
+    background: var(--navy);
   }
 
   .nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin-left: auto;
-}
+    position: absolute;
+    top: 78px;
+    left: 4vw;
+    right: 4vw;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin-left: 0;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgba(255,255,255,.98);
+    box-shadow: var(--shadow);
+  }
 
   .nav.open {
     display: flex;
   }
 
   .nav a {
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 650;
-  color: #415168;
-  transition: color .2s ease;
-  white-space: nowrap;
-}
+    display: block;
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #34445c;
+    white-space: normal;
+  }
+
+  .nav a:hover {
+    background: #f3f7fb;
+    color: var(--accent);
+  }
 
   .hero {
     min-height: auto;
-    padding: 112px 4vw 72px;
+    padding: 116px 4vw 72px;
   }
 
   h1 {
